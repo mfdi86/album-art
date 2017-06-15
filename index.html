@@ -1,28 +1,45 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/output.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Monoton|Playfair+Display" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Album Artwork</title>
   </head>
   <body>
-    <form id="new-album">
-      Image URL : <input type="text" name="image-uri" id="new-album-art">
-      <br>
-      Album Title : <input type="text" name="album-title" id="new-album-title">
-      <br>
-      Arist Name : <input type="text" name="artist-name" id="new-artist-name">
-      <br>
-      <button type="submit" class="btn" id="add-album">Lemme see that album!</button>
-
-    </form>
-
-    <div id="show-album">
-      <p><span class="image-uri"></span></p>
-      <h2 id="title"></h2>
-      <p><span class="artist-name"></span></p>
+    <div class="hero-container">
+      <div class="hero">
+        <h1>Fan Fare</h1>
+        <p>Add any album image url, title, &amp; artist name, to see it displayed below!</p>
+        <img src="img/records2.jpg" alt="Record Image" />
+         <div class="bar"></div>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="form-container">
+        <form id="new-album">
+          <div class="form-row">
+            <label for="image-url">Image URL : </label><input type="text" name="image-uri" id="new-album-art">
+            <br>
+          </div>
+          <div class="form-row">
+            <label for="album-title">Album Title : </label><input type="text" name="album-title" id="new-album-title">
+            <br>
+          </div>
+          <div class="form-row">
+            <label for="artist-name">Artist Name : </label><input type="text" name="artist-name" id="new-artist-name">
+            <br>
+          </div>
+          <button type="submit" class="btn" id="add-album">Lemme see that album!</button>
+        </form>
+        <div id="show-album">
+          <p><span class="image-uri"></span></p>
+          <h2 id="title"></h2>
+          <p><span class="artist-name"></span></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -1,0 +1,93 @@
+body{
+   max-width: 100%;
+   height: 1700px;
+   background-image: url(../img/vinyl.jpg);
+   background-repeat: no-repeat;
+}
+
+/*Hero Container*/
+.hero-container{
+  width: 100%;
+  overflow: hidden;
+}
+.hero{
+  width: 1200px;
+  height: 800px;
+  text-align: center;
+  margin: 0 auto;
+  background: #392f28;
+  position: relative;
+  color: #392f28;
+}
+
+.hero h1{
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.hero p{
+  margin: auto;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+   z-index: 1;
+}
+.hero img{
+  width: 100%;
+  height: 800px;
+  border-radius: 10px;
+}
+.bar{
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  border-radius: 10px 10px 0px 0px;
+  transform-origin: 100% 0%;
+  animation: roll-out 1.2s ease-out ;
+}
+.hero h1, .hero p{
+  animation: scale-in 1.3s ease-out;
+}
+
+/*Form-Container*/
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.form-container {
+  border-radius: 10px;
+  margin-top: 70px;
+  width: 1200px;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  background-color: #fff;
+}
+#new-album {
+  line-height: 3em;
+}
+.form-row {
+  padding: 3px 0;
+  input {
+    flex: 1;
+  }
+}
+/*Show Image*/
+#show-album {
+}
+#show-album img{
+  width: 500px;
+  height: 500px;
+  animation: display-time 1.5s ease-in-out;
+}

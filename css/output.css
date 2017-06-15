@@ -1,0 +1,138 @@
+.hero-container {
+  font-family: 'Monoton', cursive; }
+
+.hero h1 {
+  font-size: 4.1em;
+  text-transform: uppercase; }
+
+.hero p {
+  font-size: 2em; }
+
+.form-container {
+  font-size: 2em;
+  font-family: 'Playfair Display', serif; }
+
+#show-album {
+  font-size: 1em;
+  font-family: 'Lobster', cursive; }
+
+body {
+  max-width: 100%;
+  height: 1700px;
+  background-image: url(../img/vinyl.jpg);
+  background-repeat: no-repeat; }
+
+/*Hero Container*/
+.hero-container {
+  width: 100%;
+  overflow: hidden; }
+
+.hero {
+  width: 1200px;
+  height: 800px;
+  text-align: center;
+  margin: 0 auto;
+  background: #392f28;
+  position: relative;
+  color: #392f28; }
+
+.hero h1 {
+  margin: auto;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.hero p {
+  margin: auto;
+  position: absolute;
+  top: 150px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.hero img {
+  width: 100%;
+  height: 800px;
+  border-radius: 10px; }
+
+.bar {
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(161deg, #c60a09 0%, #f23332 36%, #c60a09 100%);
+  opacity: 0.3;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  top: 0;
+  border-radius: 10px 10px 0px 0px;
+  transform-origin: 100% 0%;
+  animation: roll-out 1.2s ease-out; }
+
+.hero h1, .hero p {
+  animation: scale-in 1.3s ease-out; }
+
+/*Form-Container*/
+.wrapper {
+  display: flex;
+  justify-content: center; }
+
+.form-container {
+  border-radius: 10px;
+  margin-top: 70px;
+  width: 1200px;
+  text-align: center;
+  flex-direction: column;
+  align-content: center;
+  background-color: #fff; }
+
+#new-album {
+  line-height: 3em; }
+
+.form-row {
+  padding: 3px 0; }
+  .form-row input {
+    flex: 1; }
+
+/*Show Image*/
+#show-album img {
+  width: 500px;
+  height: 500px;
+  animation: display-time 1.5s ease-in-out; }
+
+/*==========SCALE-IN==========*/
+@-webkit-keyframes scale-in {
+  0% {
+    transform: scale(10, 10);
+    opacity: 0; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
+@keyframes scale-in {
+  0% {
+    transform: scale(10, 10);
+    opacity: 0; }
+  100% {
+    transform: scale(1, 1);
+    opacity: 1; } }
+/*==========ROLL-OUT==========*/
+@-webkit-keyframes roll-out {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+@keyframes roll-out {
+  0% {
+    width: 0; }
+  100% {
+    width: 100%; } }
+@keyframes display-time {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/*# sourceMappingURL=output.css.map */

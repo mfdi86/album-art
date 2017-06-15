@@ -34,7 +34,6 @@ $("form#new-album").submit(function(event) {
     var inputtedArtistName = $("input#new-artist-name").val();
     var newAlbum = new Album(inputtedAlbumTitle, inputtedArtistName, inputtedAlbumArt);
 
-debugger;
     $("#show-album").prepend("<img src='" + newAlbum.uri + "'/>");
     $("h2#title").text(newAlbum.title);
     $(".artist-name").text(newAlbum.artist);
