@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/output.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Album Artwork</title>
+  </head>
+  <body>
+    <form id="new-album">
+      Image URL : <input type="text" name="image-uri" id="new-album-art">
+      <br>
+      Album Title : <input type="text" name="album-title" id="new-album-title">
+      <br>
+      Arist Name : <input type="text" name="artist-name" id="new-artist-name">
+      <br>
+      <button type="submit" class="btn" id="add-album">Lemme see that album!</button>
+
+    </form>
+
+    <div id="show-album">
+      <p><span class="image-uri"></span></p>
+      <h2 id="title"></h2>
+      <p><span class="artist-name"></span></p>
+    </div>
+  </body>
+</html>
